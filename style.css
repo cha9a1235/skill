@@ -143,7 +143,7 @@ img {
 
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
 }
 
 .section-tag {
@@ -387,10 +387,10 @@ img {
 /* ===== HERO ===== */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
-    padding: 120px 0 80px;
+    padding: 100px 0 50px;
     overflow: hidden;
 }
 
@@ -588,7 +588,7 @@ img {
 
 /* ===== FEATURES ===== */
 .features {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-section);
     position: relative;
     overflow: hidden;
@@ -668,7 +668,7 @@ img {
 
 /* ===== CHANNELS ===== */
 .channels {
-    padding: 100px 0;
+    padding: 60px 0;
     overflow: hidden;
     position: relative;
 }
@@ -833,8 +833,9 @@ img {
 
 /* ===== PRICING ===== */
 .pricing {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-section);
+    position: relative;
 }
 
 .currency-toggle {
@@ -996,7 +997,7 @@ img {
 
 /* ===== TESTIMONIALS WALL ===== */
 .reviews {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 /* Trustpilot header bar */
@@ -1041,7 +1042,7 @@ img {
 .reviews-wall {
     display: flex;
     gap: 20px;
-    height: 700px;
+    height: 500px;
     overflow: hidden;
     position: relative;
     mask-image: linear-gradient(180deg, transparent 0%, black 5%, black 95%, transparent 100%);
@@ -1195,7 +1196,7 @@ img {
 
 /* ===== HOW IT WORKS ===== */
 .how-it-works {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-section);
 }
 
@@ -1256,7 +1257,7 @@ img {
 
 /* ===== MASCOT SECTION ===== */
 .mascot-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-body);
     overflow: hidden;
 }
@@ -1392,7 +1393,7 @@ img {
 
 /* ===== VIDEO SHOWCASE ===== */
 .video-showcase {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-section);
     overflow: hidden;
 }
@@ -1460,7 +1461,7 @@ img {
 
 /* ===== FAQ ===== */
 .faq {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .faq-list {
@@ -1781,7 +1782,7 @@ img {
 }
 
 /* ===== PAIN SECTION ===== */
-.pain-section { padding: 100px 0; }
+.pain-section { padding: 60px 0; }
 .pain-grid { display: flex; align-items: stretch; justify-content: center; gap: 24px; flex-wrap: wrap; }
 .pain-card { flex: 1; min-width: 300px; max-width: 450px; background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
 .pain-old { border-color: var(--danger); }
@@ -1801,7 +1802,7 @@ img {
 @media (max-width: 768px) { .pain-grid { flex-direction: column; align-items: center; } .pain-vs { transform: rotate(90deg); } }
 
 /* ===== SPORTS SECTION ===== */
-.sports-section { padding: 100px 0; background: var(--bg-section); }
+.sports-section { padding: 60px 0; background: var(--bg-section); }
 .wc-banner { background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(212,175,55,0.02)); border: 1px solid rgba(212,175,55,0.3); border-radius: var(--radius); padding: 40px; text-align: center; margin-bottom: 48px; }
 .wc-badge { display: inline-block; background: var(--primary); color: var(--btn-text); padding: 6px 20px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; margin-bottom: 16px; }
 .wc-banner h3 { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 400; margin-bottom: 12px; }
@@ -1816,7 +1817,7 @@ img {
 @media (max-width: 768px) { .sports-grid { grid-template-columns: 1fr; } }
 
 /* ===== MOVIES SECTION ===== */
-.movies-section { padding: 100px 0; }
+.movies-section { padding: 60px 0; }
 .movies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .movie-card { background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all var(--transition); }
 .movie-card:hover { border-color: var(--primary); transform: translateY(-4px); }
@@ -1826,7 +1827,7 @@ img {
 @media (max-width: 768px) { .movies-grid { grid-template-columns: 1fr; } }
 
 /* ===== MULTILINGUAL ===== */
-.multilingual-section { padding: 80px 0; background: var(--bg-section); }
+.multilingual-section { padding: 50px 0; background: var(--bg-section); }
 .lang-flags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .lang-pill { background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); padding: 10px 20px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; transition: all var(--transition); }
 .lang-pill:hover { border-color: var(--primary); transform: translateY(-2px); }
@@ -1850,7 +1851,7 @@ img {
 
 /* ===== COMPARISON TABLE ===== */
 .comparison {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-section);
 }
 
@@ -2778,7 +2779,7 @@ img {
 
 /* ===== TRUSTED BY ===== */
 .trusted-by {
-    padding: 40px 0;
+    padding: 24px 0;
     border-bottom: 1px solid var(--border);
 }
 
