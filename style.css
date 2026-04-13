@@ -1693,6 +1693,74 @@ img {
     }
 }
 
+/* ===== PAIN SECTION ===== */
+.pain-section { padding: 100px 0; }
+.pain-grid { display: flex; align-items: stretch; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.pain-card { flex: 1; min-width: 300px; max-width: 450px; background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
+.pain-old { border-color: var(--danger); }
+.pain-old h3 { color: var(--danger); font-family: var(--font-heading); font-weight: 400; font-size: 1.2rem; margin-bottom: 20px; }
+.pain-new { border-color: var(--primary); }
+.pain-new h3 { color: var(--primary); font-family: var(--font-heading); font-weight: 400; font-size: 1.2rem; margin-bottom: 20px; }
+.pain-list { list-style: none; margin-bottom: 16px; }
+.pain-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); font-size: 0.9rem; }
+.pain-total { font-size: 1.1rem; font-weight: 800; color: var(--danger); margin-top: 12px; }
+.pain-yearly { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
+.pain-vs { font-family: var(--font-heading); font-size: 2rem; color: var(--text-muted); display: flex; align-items: center; }
+.pain-price { text-align: center; margin-bottom: 20px; }
+.pain-amount { font-family: var(--font-heading); font-size: 3rem; color: var(--primary); }
+.pain-features { list-style: none; margin-bottom: 20px; }
+.pain-features li { padding: 6px 0; color: var(--text-secondary); font-size: 0.9rem; }
+.pain-saving { background: rgba(16, 185, 129, 0.1); color: var(--success); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center; font-weight: 700; font-size: 0.9rem; margin-bottom: 20px; }
+@media (max-width: 768px) { .pain-grid { flex-direction: column; align-items: center; } .pain-vs { transform: rotate(90deg); } }
+
+/* ===== SPORTS SECTION ===== */
+.sports-section { padding: 100px 0; background: var(--bg-section); }
+.wc-banner { background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(212,175,55,0.02)); border: 1px solid rgba(212,175,55,0.3); border-radius: var(--radius); padding: 40px; text-align: center; margin-bottom: 48px; }
+.wc-badge { display: inline-block; background: var(--primary); color: var(--btn-text); padding: 6px 20px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; margin-bottom: 16px; }
+.wc-banner h3 { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 400; margin-bottom: 12px; }
+.wc-banner p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.wc-countdown { display: flex; justify-content: center; gap: 8px; }
+.sports-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.sport-card { background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all var(--transition); }
+.sport-card:hover { border-color: var(--primary); transform: translateY(-4px); }
+.sport-card span { font-size: 2rem; display: block; margin-bottom: 12px; }
+.sport-card h4 { font-family: var(--font-heading); font-weight: 400; font-size: 1.1rem; margin-bottom: 8px; }
+.sport-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.7; }
+@media (max-width: 768px) { .sports-grid { grid-template-columns: 1fr; } }
+
+/* ===== MOVIES SECTION ===== */
+.movies-section { padding: 100px 0; }
+.movies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.movie-card { background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all var(--transition); }
+.movie-card:hover { border-color: var(--primary); transform: translateY(-4px); }
+.movie-card span { font-size: 2rem; display: block; margin-bottom: 12px; }
+.movie-card h4 { font-family: var(--font-heading); font-weight: 400; font-size: 1.1rem; margin-bottom: 8px; }
+.movie-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.7; }
+@media (max-width: 768px) { .movies-grid { grid-template-columns: 1fr; } }
+
+/* ===== MULTILINGUAL ===== */
+.multilingual-section { padding: 80px 0; background: var(--bg-section); }
+.lang-flags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.lang-pill { background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); padding: 10px 20px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; transition: all var(--transition); }
+.lang-pill:hover { border-color: var(--primary); transform: translateY(-2px); }
+
+/* ===== TRUST SIGNALS ===== */
+.trust-section { padding: 60px 0; }
+.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 24px; }
+.trust-stat { background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; text-align: center; }
+.trust-num { display: block; font-family: var(--font-heading); font-size: 1.6rem; color: var(--primary); margin-bottom: 4px; }
+.trust-stat span { display: block; font-weight: 700; font-size: 0.9rem; color: var(--text-primary); }
+.trust-stat small { color: var(--text-muted); font-size: 0.8rem; }
+.trust-security { text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+@media (max-width: 768px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ===== PRICING EXTRAS ===== */
+.pricing-universal { text-align: center; background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 24px; margin-bottom: 32px; color: var(--text-secondary); font-size: 0.85rem; font-weight: 600; }
+.pricing-anchor { color: var(--text-muted); font-size: 0.85rem; font-style: italic; margin-bottom: 16px; text-align: center; }
+.pricing-guarantee { text-align: center; margin-top: 24px; padding: 20px; background: var(--card-glass); backdrop-filter: blur(10px); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-secondary); font-size: 0.88rem; line-height: 1.8; }
+.pricing-guarantee strong { color: var(--primary); }
+.tp-link { color: var(--primary); font-weight: 700; font-size: 0.9rem; }
+
 /* ===== COMPARISON TABLE ===== */
 .comparison {
     padding: 100px 0;

@@ -291,6 +291,37 @@ if (heroTitle) {
 }
 
 
+// ===== WORLD CUP 2026 COUNTDOWN =====
+const wcDays = document.getElementById('wcDays');
+const wcHours = document.getElementById('wcHours');
+const wcMins = document.getElementById('wcMins');
+const wcSecs = document.getElementById('wcSecs');
+
+if (wcDays) {
+    const wcDate = new Date('2026-06-11T00:00:00');
+    function updateWC() {
+        const diff = wcDate - new Date();
+        if (diff <= 0) return;
+        wcDays.textContent = String(Math.floor(diff / (1000*60*60*24))).padStart(2,'0');
+        wcHours.textContent = String(Math.floor((diff/(1000*60*60))%24)).padStart(2,'0');
+        wcMins.textContent = String(Math.floor((diff/(1000*60))%60)).padStart(2,'0');
+        wcSecs.textContent = String(Math.floor((diff/1000)%60)).padStart(2,'0');
+    }
+    updateWC();
+    setInterval(updateWC, 1000);
+}
+
+// ===== HERO LIVE COUNT =====
+const heroLiveCount = document.getElementById('heroLiveCount');
+if (heroLiveCount) {
+    setInterval(() => {
+        let count = parseInt(heroLiveCount.textContent.replace(/,/g, ''));
+        count += Math.floor(Math.random() * 20) - 10;
+        count = Math.max(3800, Math.min(5200, count));
+        heroLiveCount.textContent = count.toLocaleString('en');
+    }, 4000);
+}
+
 // ===== CTA URGENCY TIMER =====
 const ctaHrs = document.getElementById('ctaHrs');
 const ctaMins = document.getElementById('ctaMins');
