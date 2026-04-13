@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BingeBear — ابدأ تجربتك المجانية</title>
+    <meta name="description" content="جرّب BingeBear مجاناً لمدة 24 ساعة — بدون بطاقة بنكية. سجّل الحين واستمتع بأكثر من 80,000 قناة.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Lalezar&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="BingeBear" class="logo-img">
+                <span class="logo-text">Binge<span class="logo-highlight">Bear</span></span>
+            </a>
+            <div class="nav-actions">
+                <div class="theme-switch" id="themeToggle" role="button" aria-label="تبديل الوضع">
+                    <span class="switch-icon switch-moon">🌙</span>
+                    <span class="switch-icon switch-sun">☀️</span>
+                    <div class="switch-knob"></div>
+                </div>
+                <a href="index.html" class="btn btn-outline btn-nav">← الرجوع للرئيسية</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== TRIAL FORM ===== -->
+    <section class="trial-section">
+        <div class="container">
+            <div class="trial-wrapper">
+                <!-- Left side — Form -->
+                <div class="trial-form-side">
+                    <div class="trial-header">
+                        <h1>ابدأ تجربتك <span class="gradient-text">المجانية</span></h1>
+                        <p>24 ساعة كاملة — بدون بطاقة بنكية، بدون التزام</p>
+                    </div>
+
+                    <form class="trial-form" id="trialForm">
+                        <div class="form-group">
+                            <label for="fullName">الاسم الكامل</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" placeholder="example@email.com" required dir="ltr">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الجوال (واتساب)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000" required dir="ltr">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">الدولة</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>اختر دولتك</option>
+                                <option value="AE">الإمارات العربية المتحدة 🇦🇪</option>
+                                <option value="QA">قطر 🇶🇦</option>
+                                <option value="SA">المملكة العربية السعودية 🇸🇦</option>
+                                <option value="KW">الكويت 🇰🇼</option>
+                                <option value="BH">البحرين 🇧🇭</option>
+                                <option value="OM">عُمان 🇴🇲</option>
+                                <option value="EG">مصر 🇪🇬</option>
+                                <option value="JO">الأردن 🇯🇴</option>
+                                <option value="LB">لبنان 🇱🇧</option>
+                                <option value="IQ">العراق 🇮🇶</option>
+                                <option value="OTHER">دولة أخرى 🌍</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="device">الجهاز المفضّل</label>
+                            <select id="device" name="device" required>
+                                <option value="" disabled selected>على أي جهاز تبي تشاهد؟</option>
+                                <option value="smart-tv">تلفزيون ذكي (Smart TV)</option>
+                                <option value="firestick">Amazon Fire Stick</option>
+                                <option value="android-box">Android Box</option>
+                                <option value="mobile">موبايل / تابلت</option>
+                                <option value="laptop">لابتوب / كمبيوتر</option>
+                                <option value="apple-tv">Apple TV</option>
+                                <option value="other">جهاز آخر</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plan">الباقة المهتم فيها</label>
+                            <select id="plan" name="plan">
+                                <option value="" disabled selected>اختر الباقة (اختياري)</option>
+                                <option value="monthly">شهري — €20/شهر</option>
+                                <option value="yearly">سنوي — €80/سنة (وفّر 67%)</option>
+                                <option value="lifetime">مدى الحياة — €250 دفعة واحدة</option>
+                                <option value="undecided">ما قررت بعد</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">ملاحظات إضافية <span class="optional">(اختياري)</span></label>
+                            <textarea id="message" name="message" rows="3" placeholder="أي شي تبي تسأل عنه أو تضيفه..."></textarea>
+                        </div>
+
+                        <div class="form-agree">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agree" name="agree" required>
+                                <span class="checkmark"></span>
+                                <span>أوافق على <a href="#">شروط الاستخدام</a> و <a href="#">سياسة الخصوصية</a></span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            🚀 ابدأ تجربتي المجانية الحين
+                        </button>
+
+                        <p class="form-note">سنتواصل معك خلال دقائق عبر واتساب أو البريد الإلكتروني بتفاصيل التفعيل.</p>
+                    </form>
+
+                    <!-- Success Message (hidden by default) -->
+                    <div class="trial-success" id="trialSuccess" style="display:none;">
+                        <div class="success-icon">✅</div>
+                        <h2>تم التسجيل بنجاح!</h2>
+                        <p>شكراً لك! سنتواصل معك خلال دقائق عبر واتساب أو البريد الإلكتروني بتفاصيل تفعيل تجربتك المجانية.</p>
+                        <a href="index.html" class="btn btn-outline">العودة للرئيسية</a>
+                    </div>
+                </div>
+
+                <!-- Right side — Benefits -->
+                <div class="trial-benefits-side">
+                    <div class="benefits-card">
+                        <h3>تجربتك تشمل:</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <span class="benefit-icon">📺</span>
+                                <div>
+                                    <strong>80,000+ قناة مباشرة</strong>
+                                    <p>عربية وعالمية بجودة عالية</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">🎬</span>
+                                <div>
+                                    <strong>50,000+ فيلم ومسلسل</strong>
+                                    <p>مكتبة ضخمة تتحدث باستمرار</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">⚽</span>
+                                <div>
+                                    <strong>رياضة بلا حدود</strong>
+                                    <p>كل البطولات والمباريات مباشرة</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">4K</span>
+                                <div>
+                                    <strong>جودة فائقة</strong>
+                                    <p>بث بجودة 4K بدون تقطيع</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">🔒</span>
+                                <div>
+                                    <strong>بدون بطاقة بنكية</strong>
+                                    <p>جرّب أولاً وقرر بعدين</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">⚡</span>
+                                <div>
+                                    <strong>تفعيل فوري</strong>
+                                    <p>جاهز خلال دقائق</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <span>⭐ 4.8</span>
+                            <span>Trustpilot</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span>🏠 20K+</span>
+                            <span>عائلة</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span>📅 منذ</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer footer-simple">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2016–2026 BingeBear. جميع الحقوق محفوظة.</p>
+                <p class="footer-disclaimer">BingeBear هي خدمة IPTV مستقلة. جميع العلامات التجارية المذكورة مملوكة لأصحابها.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
