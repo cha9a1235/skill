@@ -70,6 +70,40 @@ html {
     font-size: 16px;
 }
 
+/* ===== GLOBAL ANIMATED BACKGROUNDS ===== */
+
+/* Noise texture overlay on body */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+}
+
+body > *:not(.loading-screen) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Floating mesh gradient blobs */
+.mesh-bg {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.07;
+    pointer-events: none;
+    z-index: 0;
+}
+
+[data-theme="light"] .mesh-bg {
+    opacity: 0.05;
+}
+
 body {
     font-family: var(--font-ar);
     background: var(--bg-body);
@@ -372,6 +406,24 @@ img {
     height: 100%;
     object-fit: cover;
     opacity: var(--media-opacity);
+}
+
+/* Hero gradient mesh */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(var(--overlay-rgb), 0.3) 40%,
+        rgba(var(--overlay-rgb), 1) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero-video-overlay {
@@ -1693,6 +1745,41 @@ img {
     }
 }
 
+/* ===== SECTION GRADIENT DIVIDERS ===== */
+.pain-section::after,
+.sports-section::after,
+.movies-section::after,
+.comparison::after,
+.reviews::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    opacity: 0.15;
+}
+
+/* Animated gradient line at top of pricing */
+.pricing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), var(--primary-light), var(--primary), transparent);
+    background-size: 200% 100%;
+    animation: gradientLine 4s ease infinite;
+}
+
+@keyframes gradientLine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 /* ===== PAIN SECTION ===== */
 .pain-section { padding: 100px 0; }
 .pain-grid { display: flex; align-items: stretch; justify-content: center; gap: 24px; flex-wrap: wrap; }
@@ -2311,6 +2398,80 @@ img {
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== MESH FLOAT ANIMATIONS ===== */
+@keyframes meshFloat1 {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(80px, -60px) scale(1.1); }
+    66% { transform: translate(-40px, 40px) scale(0.95); }
+    100% { transform: translate(60px, -80px) scale(1.05); }
+}
+
+@keyframes meshFloat2 {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-60px, 80px) scale(1.08); }
+    66% { transform: translate(50px, -30px) scale(0.92); }
+    100% { transform: translate(-70px, 60px) scale(1.1); }
+}
+
+@keyframes meshFloat3 {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(40px, 60px) scale(1.05); }
+    66% { transform: translate(-80px, -40px) scale(1.1); }
+    100% { transform: translate(30px, -70px) scale(0.95); }
+}
+
+/* Section ambient glow strips */
+.pain-section,
+.sports-section,
+.movies-section,
+.multilingual-section,
+.trust-section,
+.how-it-works,
+.reviews,
+.faq {
+    position: relative;
+    overflow: hidden;
+}
+
+.pain-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.06) 0%, transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    animation: meshFloat1 18s ease-in-out infinite alternate;
+}
+
+.sports-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    animation: meshFloat2 22s ease-in-out infinite alternate;
+}
+
+.movies-section::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    animation: meshFloat3 20s ease-in-out infinite alternate;
 }
 
 /* Reveal animations */
