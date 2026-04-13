@@ -3098,3 +3098,140 @@ body {
 .section-bg-image img {
     transition: transform 0.1s linear;
 }
+
+/* ================================================
+   MOBILE-FIRST COMPREHENSIVE FIX
+   ================================================ */
+@media (max-width: 768px) {
+
+    /* === General === */
+    .section-header { margin-bottom: 36px; }
+    .section-title { font-size: 1.5rem; }
+    .section-desc { font-size: 0.95rem; }
+
+    /* === Hero === */
+    .hero { padding: 100px 0 50px; min-height: auto; }
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 0.95rem; }
+    .hero-stats { gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .stat-number { font-size: 1.4rem; }
+    .stat-label { font-size: 0.75rem; }
+    .stat-divider { display: none; }
+    .hero-cta .btn-lg { padding: 14px 28px; font-size: 0.95rem; width: 100%; }
+
+    /* === Trusted By === */
+    .trusted-logos { gap: 16px; }
+    .trusted-logos span { font-size: 0.85rem; }
+
+    /* === Features === */
+    .features { padding: 60px 0; }
+    .features-grid { grid-template-columns: 1fr; gap: 16px; }
+    .feature-card { padding: 24px 20px; }
+
+    /* === Video Showcase === */
+    .video-showcase { padding: 60px 0; }
+    .showcase-split { grid-template-columns: 1fr; gap: 24px; }
+    .showcase-reverse { direction: rtl; }
+    .showcase-text { text-align: center; }
+    .showcase-text .section-title { text-align: center; }
+
+    /* === Channels === */
+    .channels { padding: 60px 0; }
+    .channels-categories { gap: 8px; }
+    .channel-tab { padding: 8px 16px; font-size: 0.8rem; }
+    .channel-pill { padding: 8px 14px; font-size: 0.8rem; }
+    .channels-counter { padding: 16px; gap: 8px; flex-direction: column; }
+    .counter-number { font-size: 1.6rem; }
+
+    /* === Comparison Table === */
+    .comparison { padding: 60px 0; }
+    .compare-table { font-size: 0.8rem; }
+    .compare-table thead th { padding: 12px 10px; font-size: 0.85rem; }
+    .compare-table tbody td { padding: 12px 10px; }
+    .compare-cta { flex-direction: column; text-align: center; gap: 16px; padding: 16px 20px; }
+
+    /* === Pricing === */
+    .pricing { padding: 60px 0; }
+    .pricing-grid { grid-template-columns: 1fr; gap: 20px; }
+    .pricing-popular { transform: scale(1); }
+    .pricing-popular:hover { transform: translateY(-4px); }
+    .pricing-popular.reveal-scale.visible { transform: scale(1); }
+    .pricing-card { padding: 28px 20px; }
+    .price { font-size: 2.6rem; }
+    .countdown-unit { padding: 8px 10px; min-width: 50px; }
+    .countdown-unit span { font-size: 1.2rem; }
+    .countdown-sep { font-size: 1.2rem; }
+    .currency-toggle { flex-wrap: wrap; padding: 4px; }
+    .currency-btn { padding: 8px 16px; font-size: 0.8rem; }
+    .payment-methods { gap: 8px; }
+    .payment-icon { min-width: 70px; padding: 6px 12px; height: 36px; }
+
+    /* === Mascot === */
+    .mascot-section { padding: 60px 0; }
+    .mascot-wrapper { max-width: 260px; }
+    .mascot-highlights { gap: 10px; }
+    .mascot-highlight { padding: 10px 14px; font-size: 0.85rem; }
+
+    /* === Reviews Wall === */
+    .reviews { padding: 60px 0; }
+    .reviews-wall { height: 500px; }
+    .reviews-col:nth-child(2),
+    .reviews-col:nth-child(3) { display: none; }
+    .tp-header { padding: 10px 16px; gap: 8px; font-size: 0.8rem; }
+    .tp-score { font-size: 0.9rem; }
+    .rw-card { padding: 16px; }
+    .rw-card p { font-size: 0.85rem; }
+
+    /* === How It Works === */
+    .how-it-works { padding: 60px 0; }
+    .steps-grid { flex-direction: column; gap: 16px; }
+    .step-connector { transform: rotate(90deg); }
+    .step-card { max-width: 100%; width: 100%; padding: 28px 20px; }
+
+    /* === FAQ === */
+    .faq { padding: 60px 0; }
+    .faq-question { padding: 16px 18px; font-size: 0.9rem; }
+    .faq-answer p { padding: 0 18px 16px; font-size: 0.88rem; }
+
+    /* === Final CTA === */
+    .final-cta { padding: 40px 0; }
+    .cta-urgency { padding: 32px 16px; }
+    .cta-urgency h2 { font-size: 1.5rem; }
+    .cta-desc { font-size: 0.85rem; }
+    .cta-limited { flex-direction: column; text-align: center; padding: 12px 16px; gap: 10px; }
+    .cta-buttons { flex-direction: column; width: 100%; }
+    .cta-buttons .btn { width: 100%; }
+    .cta-expiry { font-size: 0.75rem; padding: 8px 16px; gap: 8px; }
+    .cta-mini-timer span { font-size: 1.1rem; }
+    .cta-guarantee-bar { flex-direction: column; text-align: center; padding: 16px; }
+    .cta-guarantee-text { flex-direction: column; text-align: center; }
+
+    /* === Newsletter === */
+    .newsletter { padding: 40px 0; }
+    .newsletter-box { flex-direction: column; text-align: center; padding: 24px 16px; gap: 20px; }
+    .newsletter-form { min-width: 100%; width: 100%; flex-direction: column; }
+    .newsletter-form input { border-radius: var(--radius-sm); }
+    .newsletter-form .btn { border-radius: var(--radius-sm); }
+
+    /* === Footer === */
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .footer-bottom { flex-direction: column; text-align: center; gap: 16px; }
+    .footer-bottom-right { flex-direction: column; gap: 12px; }
+
+    /* === Floating elements === */
+    .whatsapp-float { width: 48px; height: 48px; bottom: 76px; right: 16px; }
+    .whatsapp-tooltip { display: none; }
+    .back-to-top { bottom: 132px; left: 16px; width: 40px; height: 40px; font-size: 1rem; }
+    .live-visitors { bottom: 76px; left: 16px; font-size: 0.7rem; padding: 6px 12px; display: none; }
+
+    /* === Loading === */
+    .loading-logo { width: 60px; height: 60px; }
+}
+
+@media (max-width: 380px) {
+    .hero-title { font-size: 1.6rem; }
+    .hero-badge { font-size: 0.75rem; padding: 6px 14px; }
+    .container { padding: 0 12px; }
+    .cta-urgency h2 { font-size: 1.3rem; }
+    .tp-header { flex-direction: column; border-radius: var(--radius-sm); }
+}
