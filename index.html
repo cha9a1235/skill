@@ -349,6 +349,13 @@
             <!-- Universal features -->
             <div class="pricing-universal">كل باقة تشمل: +80,000 قناة · +50,000 أفلام ومسلسلات · كل الرياضة · كل الأجهزة · VPN مدمج · دعم واتساب 24/7</div>
 
+            <!-- Currency Toggle -->
+            <div class="currency-toggle">
+                <button class="currency-btn active" data-currency="aed">د.إ درهم</button>
+                <button class="currency-btn" data-currency="eur">€ يورو</button>
+                <button class="currency-btn" data-currency="qar">ر.ق ريال</button>
+            </div>
+
             <div class="pricing-countdown">
                 <span class="countdown-label">العرض ينتهي خلال</span>
                 <div class="countdown-timer" id="countdownTimer">
@@ -364,7 +371,7 @@
                 <div class="pricing-card pricing-popular reveal-scale stagger-1">
                     <div class="popular-badge">الأكثر طلباً 🔥</div>
                     <div class="pricing-header"><h3>شهري</h3><p class="pricing-sub">الغِ أي وقت</p></div>
-                    <div class="pricing-amount"><span class="price">80</span><span class="currency-symbol">د.إ</span><span class="pricing-period">/شهر</span></div>
+                    <div class="pricing-amount"><span class="price" data-aed="80" data-eur="20" data-qar="80">80</span><span class="currency-symbol" data-aed="د.إ" data-eur="€" data-qar="ر.ق">د.إ</span><span class="pricing-period">/شهر</span></div>
                     <p class="pricing-anchor">أقل من عشاء في مطعم — والترفيه يستمر شهر كامل.</p>
                     <ul class="pricing-features"><li>✓ تجديد تلقائي، الغِ أي وقت</li><li>✓ تجربة مجانية 24 ساعة أولاً</li><li>✓ كل القنوات، كل الرياضة، كل الأجهزة</li><li>✓ دعم واتساب 7 أيام</li></ul>
                     <a href="trial.html" class="btn btn-primary btn-block">ابدأ الشهري ←</a>
@@ -372,8 +379,8 @@
                 <!-- Yearly -->
                 <div class="pricing-card reveal-scale stagger-2">
                     <div class="pricing-header"><h3>سنوي</h3><p class="pricing-sub">وفّر 66%</p></div>
-                    <div class="pricing-amount"><span class="price">330</span><span class="currency-symbol">د.إ</span><span class="pricing-period">/سنة</span></div>
-                    <div class="pricing-original">بدلاً من <del>960 د.إ</del></div>
+                    <div class="pricing-amount"><span class="price" data-aed="330" data-eur="80" data-qar="320">330</span><span class="currency-symbol" data-aed="د.إ" data-eur="€" data-qar="ر.ق">د.إ</span><span class="pricing-period">/سنة</span></div>
+                    <div class="pricing-original">بدلاً من <del><span class="original-price" data-aed="960" data-eur="240" data-qar="960">960</span> <span class="original-currency" data-aed="د.إ" data-eur="€" data-qar="ر.ق">د.إ</span></del></div>
                     <p class="pricing-anchor">يعني 27.5 درهم في الشهر — أرخص من اشتراك Netflix الأساسي.</p>
                     <ul class="pricing-features"><li>✓ ضمان استرداد 90 يوم</li><li>✓ نفس قنوات الباقة الشهرية</li><li>✓ دعم واتساب أولوية</li><li>✓ تجربة مجانية 24 ساعة</li></ul>
                     <a href="trial.html" class="btn btn-outline btn-block">احصل على السنوي ←</a>
@@ -381,8 +388,8 @@
                 <!-- Lifetime -->
                 <div class="pricing-card reveal-scale stagger-3">
                     <div class="pricing-header"><h3>مدى الحياة</h3><p class="pricing-sub">ادفع مرة واحدة</p></div>
-                    <div class="pricing-amount"><span class="price">1,000</span><span class="currency-symbol">د.إ</span><span class="pricing-period">/للأبد</span></div>
-                    <div class="pricing-original">بدلاً من <del>2,000 د.إ</del></div>
+                    <div class="pricing-amount"><span class="price" data-aed="1000" data-eur="250" data-qar="1000">1,000</span><span class="currency-symbol" data-aed="د.إ" data-eur="€" data-qar="ر.ق">د.إ</span><span class="pricing-period">/للأبد</span></div>
+                    <div class="pricing-original">بدلاً من <del><span class="original-price" data-aed="2000" data-eur="500" data-qar="2000">2,000</span> <span class="original-currency" data-aed="د.إ" data-eur="€" data-qar="ر.ق">د.إ</span></del></div>
                     <p class="pricing-anchor">ادفع مرة وانسى فاتورة الترفيه للأبد. تقسيط متاح: 500 الحين + 500 الشهر الجاي.</p>
                     <ul class="pricing-features"><li>✓ كل مميزات الباقة الشهرية والسنوية</li><li>✓ وصول مدى الحياة</li><li>✓ كل التحديثات المستقبلية مجاناً</li><li>✓ دعم واتساب VIP</li></ul>
                     <a href="trial.html" class="btn btn-outline btn-block">احصل على مدى الحياة ←</a>
